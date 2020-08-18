@@ -87,7 +87,6 @@ body {
 	height: 1064px;
 	margin: 106px 108px 0px 142px;
 	background: url(../img/Ellipse_1_copy.png) no-repeat;
-	border: 1px solid #000;
 }
 
 .title {
@@ -120,8 +119,78 @@ h1 {
 }
 
 .textbox {
+	width: 736px;
+	height: 257px;
+	opacity: 0.8;
+	color: #273d46;
+	font-family: "Times New Roman PSMT";
+	font-size: 24px;
+	line-height: 40px;
+	margin-left: 334px;
+	margin-right: 370px;
+	margin-top: -164px;
 }
 .listbox {
+	margin: 64px 652px 0px 331px;
 }
+.listbox li {
+	background: url(/img/icons/check_icon.png) left 5px no-repeat;
+	padding-left: 36px;
+}
+
+.listbox li:first-child {
+	white-space: nowrap;
+	width: 421px;
+	height: 19px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+	line-height: 36px;
+}
+.listbox li:nth-child(2) {
+	white-space: nowrap;
+	width: 332px;
+	height: 19px;
+	font-size: 20px;
+	color: #80b7b3;
+	line-height: 36px;
+	font-style: italic;
+	margin-top: 13px;
+}
+.listbox li:nth-child(3) {
+	white-space: nowrap;
+	width: 377px;
+	height: 20px;
+	color: #273d46;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 36px;
+	margin-top: 17px;
+}
+.last-list {
+	white-space: nowrap;
+	width: 397px;
+	height: 19px;
+	opacity: 0.3;
+	color: #273d46;
+	font-size: 20px;
+	line-height: 36px;
+	text-decoration: line-through;
+	margin-top: 16px;
+}
+
 .button {
+	background: url(/img/Shape_2.png) 150px no-repeat, url(/img/icons/Rounded_Rectangle_1.png) -33px -28px no-repeat;
+	width: 199px;
+	height: 44px;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	margin: 59px 911px 0px 330px;
+}
+.butt-link {
+	width: 110px;
+	height: 10px;
+	color: #ffffff;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	margin: 17px 11px 17px 30px;
 }
