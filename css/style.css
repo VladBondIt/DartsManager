@@ -77,13 +77,13 @@ h6 {
 
 body {
 	background-color: #e8e8e8;
+	background: url(/img/Ellipse_1_copy.png) 265px 110px no-repeat, url(/img/Layer_0.png) 123px 0px no-repeat;
 }
 .content {
 	padding-top: 168px;
 	padding-bottom: 137px;
 	max-width: 841px;
 	margin: 0px auto;
-	background: url(/img/Ellipse_1_copy.png) 500px auto no-repeat;
 }
 .content-top {
 	text-align: center;
@@ -174,7 +174,7 @@ body {
 	background-color: #80b7b3;
 	height: 44px;
 	padding: 0px 30px;
-	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	box-shadow: 5px 5px 5px rgba(128, 183, 179, 0.54);
 	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
@@ -185,4 +185,6 @@ body {
 .content-bottom-info__link span {
 	padding-right: 29px;
 	background: url(/img/Shape_2.png) right no-repeat;
+}
+.content-bottom-info__link:hover {
 }
