@@ -174,7 +174,7 @@ body {
 	background-color: #80b7b3;
 	height: 44px;
 	padding: 0px 30px;
-	box-shadow: 5px 5px 5px rgba(128, 183, 179, 0.54);
+	box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
 	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
@@ -187,4 +187,11 @@ body {
 	background: url(/img/Shape_2.png) right no-repeat;
 }
 .content-bottom-info__link:hover {
+	background-color: #522121;
+}
+.content-bottom-info__link:active {
+	position: relative;
+	top: 3px;
+	left: 1px;
+	box-shadow: px 2px 1px rgba(0, 0, 0, 0.5);
 }
