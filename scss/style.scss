@@ -5,6 +5,11 @@ $fz: 20px;
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     height: 100%;
+    &.lock {
+        @media (max-width: 767px) {
+            overflow: hidden;
+        }
+    }
 }
 
 .wrapper {
@@ -69,6 +74,7 @@ body {
             width: 100%;
             height: 2px;
             left: 0;
+            transition: all 0.3s ease 0s;
         }
         &::after {
             content: "";
@@ -78,6 +84,7 @@ body {
             width: 100%;
             height: 2px;
             left: 0;
+            transition: all 0.3s ease 0s;
         }
         & span {
             position: absolute;
@@ -86,18 +93,35 @@ body {
             width: 100%;
             height: 2px;
             top: 9px;
+            transition: all 0.3s ease 0s;
+        }
+        &.active::before {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        &.active:after {
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+        &.active span {
+            transform: scale(0);
         }
     }
 
     &__menu {
         @media (max-width: 767px) {
             position: fixed;
-            top: 0;
+            top: -100%;
             left: 0;
             width: 100%;
             height: 100%;
             background-color: rgb(32, 218, 177);
             padding-top: 70px;
+            transition: all 0.3s;
+            overflow: auto;
+        }
+        &.active {
+            top: 0;
         }
     }
 
@@ -121,6 +145,9 @@ body {
         text-transform: uppercase;
         font-size: 16px;
         text-decoration: none;
+        @media (max-width: 767px) {
+            font-size: 24px;
+        }
     }
 }
 .container {
@@ -129,6 +156,9 @@ body {
     padding: 0 10px;
 }
 .content {
+    @media (max-width: 767px) {
+        padding-top: 60px;
+    }
     padding-top: 100px;
     &__text {
         font-size: $fz;
