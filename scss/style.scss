@@ -2,55 +2,87 @@
 
 $fz: 20px;
 
+html,
 body {
-}
-.wrapper {
     height: 100%;
-    padding: 50px;
+    background-color: rgb(68, 45, 45);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
 }
-.block {
-    &__item {
-        padding-bottom: 20px;
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.fullscreen {
+    background-color: rgb(95, 86, 86);
+    display: flex;
+    min-height: 100vh;
+    padding: 20px 0;
+    &__body {
+        flex: 1 1 auto;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0 20px;
     }
 
     &__title {
         text-transform: uppercase;
-        letter-spacing: 2px;
-        position: relative;
-        padding-left: 30px;
-        cursor: pointer;
-        &::after,
-        &::before {
-            content: "";
-            width: 10px;
-            height: 1px;
-            background-color: rgb(0, 0, 0);
-            position: absolute;
-            top: 8px;
-            transition: all 0.5s;
-        }
-        &::before {
-            transform: rotate(40deg);
-            left: 0;
-        }
-        &::after {
-            transform: rotate(-40deg);
-            left: 8px;
-        }
-        &.active::before,
-        &.active::after {
-            background-color: red;
-        }
-        &.active::before {
-            transform: rotate(-40deg);
-        }
-        &.active::after {
-            transform: rotate(40deg);
-        }
+        font-size: 50px;
+        margin-bottom: 20px;
     }
 
     &__text {
-        display: none;
-        padding-top: 10px;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        display: inline-block;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgb(235, 223, 223);
+        letter-spacing: 2px;
+        background-color: rgb(119, 202, 108);
+        align-self: center;
+        padding: 0 20px;
+    }
+}
+
+.fullscreen_two {
+    background-color: rgb(123, 134, 60);
+}
+.fullscreen_bg {
+    background: url(/img/photo.jpg) center / cover no-repeat fixed;
+}
+
+.content {
+    &__body {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        & p {
+            margin-bottom: 20px;
+        }
+        & p:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+.footer {
+    background-color: rgb(34, 31, 31);
+    text-align: center;
+    &__body {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px 20px;
     }
 }
