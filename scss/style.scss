@@ -20,6 +20,9 @@ body {
         justify-content: space-between;
         padding-top: 40px;
         margin-bottom: 130px;
+        @media (max-width: 1310px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__burger {
@@ -34,7 +37,6 @@ body {
     }
 
     &__btn-link {
-        display: inline-block;
         font-size: 12px;
         line-height: 25px;
         color: #ffffff;
@@ -55,32 +57,92 @@ body {
 
     &__content {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 185px;
+        flex-wrap: wrap;
+        @media (max-width: 1310px) {
+            padding-bottom: 80px;
+        }
     }
 
-    &__column {
+    &__column-left {
+        max-width: 680px;
+        @media (max-width: 1310px) {
+            margin: 0px auto 30px;
+        }
+    }
+    &__column-right {
+        max-width: 600px;
+        @media (max-width: 1310px) {
+            margin: 0 auto;
+        }
     }
 
     &__title {
+        font-size: 55px;
+        line-height: 65px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 20px;
     }
 
     &__dcrp {
+        font-size: 18px;
+        line-height: 35px;
+        color: #ffffff;
+        margin-bottom: 30px;
     }
 
     &__btns {
+        display: flex;
     }
 
-    &__item {
+    &__item-buy {
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 150px;
+        height: 45px;
+        background-color: #061e37;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    &__item-free {
+        font-family: Raleway;
+        font-size: 15px;
+        line-height: 45px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #061e37;
+        width: 160px;
+        height: 45px;
+        background-color: #ffffff;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 30px;
     }
 
     &__media {
     }
 
     &__video {
+        border: 1px solid #061e37;
+        border-radius: 5px;
     }
 }
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    @media (max-width: 1440px) {
+        padding: 0 15px;
+    }
 }
 .logo {
     &__text {
