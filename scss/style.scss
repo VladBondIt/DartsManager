@@ -1,1 +1,292 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular);
+
 @import "_nullstyle.scss";
+
+body {
+    font-family: RaLeway;
+}
+
+.wrapper {
+}
+.header {
+    max-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(-53deg, #00b8d4df 13%, #1de9b6ce 86%), url(/img/bg_1.png) center / cover no-repeat;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+        margin-bottom: 130px;
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    &__logo {
+        display: flex;
+    }
+
+    &__menu {
+    }
+
+    &__btn-link {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 25px;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 2px;
+        width: 80px;
+        height: 25px;
+        text-align: center;
+        box-shadow: 1px 1px 2px #000;
+        &:hover {
+            border: 1px solid #061e37;
+            color: #061e37;
+        }
+        &:active {
+            margin: 2px 0 0 2px;
+        }
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__column {
+    }
+
+    &__title {
+    }
+
+    &__dcrp {
+    }
+
+    &__btns {
+    }
+
+    &__item {
+    }
+
+    &__media {
+    }
+
+    &__video {
+    }
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.logo {
+    &__text {
+        margin-left: 10px;
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #ffffff;
+        & p:last-child {
+            font-weight: 800;
+        }
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+        & li {
+            margin-left: 15px;
+        }
+    }
+
+    &__link {
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 600;
+        color: #ffffff;
+        &:hover {
+            color: #061e37;
+        }
+    }
+}
+.description {
+    position: relative;
+    &__label {
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+    }
+
+    &__text {
+    }
+
+    &__row {
+    }
+
+    &__column {
+    }
+
+    &__item {
+    }
+
+    &__btn {
+    }
+}
+.item {
+    &__icon {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+.info {
+    &__row {
+    }
+
+    &__column {
+    }
+
+    &__item {
+    }
+
+    &__text {
+    }
+}
+.icon {
+    &__logo {
+    }
+}
+.service {
+    &__title {
+    }
+
+    &__spoilers {
+    }
+
+    &__colomns {
+    }
+
+    &__rows {
+    }
+
+    &__item {
+    }
+
+    &__spoiler {
+    }
+
+    &__row {
+    }
+
+    &__img {
+    }
+
+    &__text {
+    }
+}
+.title {
+    &__header {
+    }
+
+    &__text {
+    }
+}
+.service-body {
+}
+.reviews {
+    &__row {
+    }
+
+    &__column {
+    }
+
+    &__item {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__btn {
+    }
+
+    &__slider {
+    }
+
+    &__name {
+    }
+}
+.meet {
+    &__body {
+    }
+
+    &__title {
+    }
+
+    &__img-slider {
+    }
+
+    &__info {
+    }
+
+    &__name {
+    }
+
+    &__text {
+    }
+
+    &__menu {
+    }
+
+    &__list {
+    }
+}
+.contact {
+    &__body {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+.footer {
+    &__row {
+    }
+
+    &__column {
+    }
+
+    &__logo {
+    }
+
+    &__left-list {
+    }
+
+    &__left-link {
+    }
+
+    &__menu {
+    }
+
+    &__icons {
+    }
+
+    &__icons-list {
+    }
+
+    &__icons-link {
+    }
+}
