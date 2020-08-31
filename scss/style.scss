@@ -121,12 +121,13 @@ body {
         height: 25px;
         text-align: center;
         box-shadow: 1px 1px 2px #000;
+        transition: all 0.3s;
         &:hover {
             border: 1px solid #061e37;
             color: #061e37;
         }
         &:active {
-            margin: 2px 0 0 0;
+            transform: translate(2px, 2px);
         }
     }
 
@@ -486,6 +487,8 @@ body {
     }
 
     &__colomns {
+        display: flex;
+        flex-direction: column;
     }
 
     &__rows {
@@ -493,27 +496,151 @@ body {
 
     &__item {
         margin-bottom: 25px;
+        box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 25px 30px 24px 25px;
     }
 
     &__spoiler {
+        position: relative;
+        cursor: pointer;
         & span {
+            display: inline-block;
             font-size: 15px;
             font-weight: 700;
             text-transform: uppercase;
             color: #061e37;
+            padding-left: 43px;
         }
-        margin-bottom: 25px;
+        &_stat {
+            & span {
+                &::before {
+                    content: "";
+                    background: url(/img/icons/servicon0.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: 1.5px;
+                    left: 0;
+                    width: 18px;
+                    height: 11px;
+                }
+                &::after {
+                    content: "";
+                    background: url(/img/icons/servarrow.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: 3.5px;
+                    right: 0;
+                    width: 11px;
+                    height: 6px;
+                }
+            }
+        }
+        &_inbox {
+            & span {
+                &::before {
+                    content: "";
+                    background: url(/img/icons/servicon1.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: 1.5px;
+                    left: 0;
+                    width: 18px;
+                    height: 14px;
+                }
+                &::after {
+                    content: "";
+                    background: url(/img/icons/servarrow.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: 3.5px;
+                    right: 0;
+                    width: 11px;
+                    height: 6px;
+                }
+            }
+        }
+        &_team {
+            & span {
+                &::before {
+                    content: "";
+                    background: url(/img/icons/servicon2.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: 1.4px;
+                    left: 0;
+                    width: 20px;
+                    height: 12px;
+                }
+                &::after {
+                    content: "";
+                    background: url(/img/icons/servarrow.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: 3.5px;
+                    right: 0;
+                    width: 11px;
+                    height: 6px;
+                }
+            }
+        }
+        &_sett {
+            & span {
+                &::before {
+                    content: "";
+                    background: url(/img/icons/servicon3.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: -1px;
+                    left: 0;
+                    width: 18px;
+                    height: 18px;
+                }
+                &::after {
+                    content: "";
+                    background: url(/img/icons/servarrow.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: 3.5px;
+                    right: 0;
+                    width: 11px;
+                    height: 6px;
+                }
+            }
+        }
+        &_feed {
+            & span {
+                &::before {
+                    content: "";
+                    background: url(/img/icons/servicon4.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: -0.5px;
+                    left: 0;
+                    width: 14px;
+                    height: 14px;
+                }
+                &::after {
+                    content: "";
+                    background: url(/img/icons/servarrow.png) 50% / 100% no-repeat;
+                    position: absolute;
+                    top: 3.5px;
+                    right: 0;
+                    width: 11px;
+                    height: 6px;
+                }
+            }
+        }
     }
 
     &__row {
         display: flex;
-
+        padding-top: 20px;
+        display: none;
+        &.clon {
+            display: flex !important;
+        }
         @media (max-width: 767px) {
             flex-wrap: wrap;
         }
     }
 
     &__img {
+        flex: 0 0 auto;
+        & img {
+            width: 100%;
+        }
         @media (max-width: 767px) {
             margin: 0 auto;
         }
@@ -527,7 +654,10 @@ body {
         color: #061e37;
         margin-left: 25px;
         & p:first-child {
-            margin-bottom: 22px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 375px) {
+            margin-left: 0;
         }
     }
 }
