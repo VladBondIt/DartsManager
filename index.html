@@ -282,18 +282,51 @@
 		</section>
 		<section class="reviews">
 			<div class="container">
-				<div class="reviews__row">
-					<div class="reviews__column">
+				<div class="reviews__grid">
+					<div class="reviews__column-left">
 						<div class="reviews__item">
-							<div class="reviews__title"></div>
-							<div class="reviews__text"></div>
-							<div class="reviews__btn"></div>
+							<div class="reviews__title">
+								<p>What our customers</p>
+								<p>have to say about us.</p>
+							</div>
+							<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna</div>
+							<div class="reviews__btn">Get started</div>
 						</div>
 					</div>
-					<div class="reviews__column">
+					<div class="reviews__column-right">
 						<div class="reviews__slider">
-							<div class="reviews__name"></div>
-							<div class="reviews__text"></div>
+							<div class="reviews__img">
+								<img src="/img/rev_foto1.png" alt="">
+							</div>
+							<div class="reviews__discr">
+								<h3>John Doe</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</div>
+						</div>
+						<div class="reviews__slider">
+							<div class="reviews__img">
+								<img src="/img/rev_foto2.png" alt="">
+							</div>
+							<div class="reviews__discr">
+								<h3>Khalessi</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</div>
+						</div>
+						<div class="reviews__slider">
+							<div class="reviews__img">
+								<img src="/img/rev_foto1.png" alt="">
+							</div>
+							<div class="reviews__discr">
+								<h3>John Doe</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -348,17 +381,26 @@
 							eiusmod tempor incididunt ut labore et dolore magna
 						</div>
 					</div>
-					<form action="" method="post">
-						<input type="text" name="First Name" id="">
+				</div>
+				<form class="contact__form" action="" method="post">
+					<div class="contact__names">
+						<input type="text" name="First Name" id="FirstName" placeholder="First Name">
 						<input type="text" name="Last Name" id="">
+					</div>
+					<div class="contact__numbers">
 						<input type="email" name="e-mail" id="">
 						<input type="tel" name="telephone" id="">
-						<textarea name="message" id="" cols="20" rows="20"></textarea>
-						<input type="checkbox" name="subscribe to the newsletter" id="">
-						<input type="button" value="send">
-					</form>
+					</div>
+					<div class="contact__textarea">
+						<textarea name="message" id="" value="Message"></textarea>
+					</div>
+					<div class="contact__send">
+						<input class="contact__chek" type="checkbox" name="sub" id="" value="sub">
+						<label for="sub">subscribe to the newsletter</label>
+						<input class="contact__btn" type="button" value="send">
+					</div>
+				</form>
 
-				</div>
 		</section>
 		<footer class="footer">
 			<div class="container">
