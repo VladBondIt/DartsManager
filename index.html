@@ -60,9 +60,13 @@
 						</div>
 					</div>
 					<div class="header__column-right">
-						<div class="header__media">
-							<img src="/img/video_bg2.png" alt="">
-						</div>
+						<video width="100%" height="100%" controls>
+							<source src="/Source/Swimming - 10835.mp4" type="video/mp4">
+						</video>
+						<img class="header__bg" src="/img/video_bg.png" alt="">
+						<img class="header__bg2" src="/img/video_bg2.png" alt="">
+						<span>Watch the video</span>
+
 					</div>
 				</div>
 			</div>
@@ -291,11 +295,11 @@
 							</div>
 							<div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 								eiusmod tempor incididunt ut labore et dolore magna</div>
-							<div class="reviews__btn">Get started</div>
+							<a class="reviews__btn" href="">Get started</a>
 						</div>
 					</div>
 					<div class="reviews__column-right">
-						<div class="reviews__slider">
+						<!-- <div class="reviews__slider">
 							<div class="reviews__img">
 								<img src="/img/rev_foto1.png" alt="">
 							</div>
@@ -305,7 +309,7 @@
 									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
 							</div>
-						</div>
+						</div> -->
 						<div class="reviews__slider">
 							<div class="reviews__img">
 								<img src="/img/rev_foto2.png" alt="">
@@ -385,19 +389,21 @@
 				<form class="contact__form" action="" method="post">
 					<div class="contact__names">
 						<input type="text" name="First Name" id="FirstName" placeholder="First Name">
-						<input type="text" name="Last Name" id="">
+						<input type="text" name="Last Name" id="LastName" placeholder="Last Name">
 					</div>
 					<div class="contact__numbers">
-						<input type="email" name="e-mail" id="">
-						<input type="tel" name="telephone" id="">
+						<input type="email" name="e-mail" id="email" placeholder="Email">
+						<input type="tel" name="telephone" id="tel" placeholder="Phone">
 					</div>
 					<div class="contact__textarea">
-						<textarea name="message" id="" value="Message"></textarea>
+						<textarea name="message" id="mes" placeholder="Message"></textarea>
 					</div>
 					<div class="contact__send">
-						<input class="contact__chek" type="checkbox" name="sub" id="" value="sub">
-						<label for="sub">subscribe to the newsletter</label>
-						<input class="contact__btn" type="button" value="send">
+						<label class="contact__check check">
+							<input class="check__input" type="checkbox" name="sub" id="sub">
+							<span class="check__box"></span>
+							subscribe to the newsletter</label>
+						<input class="contact__btn" type="submit" value="send">
 					</div>
 				</form>
 
@@ -421,7 +427,7 @@
 					</div>
 					<div class="footer__column">
 						<div class="footer__menu menu">
-							<ul class="menu__list">
+							<ul class="footer__rlist menu__list">
 								<li><a href="" class="menu__link">Home</a></li>
 								<li><a href="" class="menu__link">Service</a></li>
 								<li><a href="" class="menu__link">Extension</a></li>
