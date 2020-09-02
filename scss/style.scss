@@ -916,6 +916,8 @@ body {
 .meet {
     margin-bottom: 80px;
     &__body {
+        max-width: 645px;
+        margin: 0 auto;
     }
 
     &__title {
@@ -923,18 +925,52 @@ body {
     }
 
     &__slider {
+        position: relative;
+        & .slick-arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            font-size: 0;
+        }
+        & .slick-arrow.slick-prev {
+            left: 0;
+            background-image: url(/img/icons/arrow_back_ios-24px.svg);
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+            background-size: contain;
+            width: 50px;
+            height: 50px;
+        }
+        & .slick-arrow.slick-next {
+            background-image: url(/img/icons/arrow_forward_ios-24px.svg);
+            background-repeat: no-repeat;
+            background-color: #fff;
+            background-size: contain;
+            right: 0;
+            width: 50px;
+            height: 50px;
+        }
     }
     &__slider-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 30px;
     }
     &__img {
-        margin-bottom: 2%;
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
     }
     &__name {
         font-size: 18px;
         line-height: 25px;
         font-weight: 700;
         color: #061e37;
-        margin-bottom: 2%;
+        margin-bottom: 15px;
     }
 
     &__text {
@@ -942,21 +978,30 @@ body {
         line-height: 25px;
         font-weight: 400;
         color: #90a4ae;
-        margin-bottom: 2%;
+        margin-bottom: 40px;
     }
 
     &__list {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
         li {
-            margin-right: 31px;
+            margin-right: 45px;
             &:last-child {
                 margin-right: 0;
             }
+        }
+        & img {
+            width: 100%;
+            height: 18px;
         }
     }
 }
 .contact {
     margin-bottom: 80px;
+    background-color: #fafafa;
     &__body {
+        padding-top: 40px;
     }
 
     &__title {
