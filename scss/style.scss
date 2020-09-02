@@ -199,6 +199,7 @@ body {
         & video {
             width: 100%;
             object-fit: cover;
+            visibility: hidden;
             @media (max-width: 563px) {
                 // transform: translate(0, 2px);
             }

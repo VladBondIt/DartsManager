@@ -379,6 +379,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  visibility: hidden;
 }
 
 .header__column-right img {

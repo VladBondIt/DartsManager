@@ -14,3 +14,9 @@ $(document).ready(function () {
         $(this).next().slideToggle(300).css('display', 'flex');
     });
 });
+$(document).ready(function () {
+    $('.header__column-right span').click(function (event) {
+        $('.header__column-right img').css('z-index', '-' + '2');
+        $(this).css('visibility', 'hidden');
+    });
+});
