@@ -35,9 +35,45 @@ $(document).ready(function () {
     });
 });
 
-// слайдер
+$(document).ready(function () {
+    $('.header__btn-link').click(function (event) {
+        $('.popup-login,.popup-login__content').addClass('open');
+    });
+});
+
+$(document).ready(function () {
+    $('.close-popup').click(function (event) {
+        $('.popup-login,.popup-login__content').removeClass('open');
+    });
+});
+// Горизонтальный слайдер
 
 $(document).ready(function () {
     $('.meet__slider').slick({
+        speed: 800,
+        touchThreshold: 20,
     });
 });
+
+// Вертикальный слайдер
+
+$(document).ready(function () {
+    $('.reviews__v-slider').slick({
+        speed: 900,
+        vertical: true,
+        slidesToShow: 2,
+        swipe: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    speed: 900,
+                    vertical: true,
+                    swipe: false,
+                    slidesToShow: 1,
+                }
+            },
+        ]
+    });
+});
+
