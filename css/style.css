@@ -1803,7 +1803,7 @@ body {
   position: relative;
   max-width: 800px;
   background-color: #fff;
-  padding: 50px;
+  padding: 30px;
   border-radius: 15px;
   opacity: 0;
   -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
@@ -1819,6 +1819,12 @@ body {
           transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
 }
 
+@media (max-width: 321px) {
+  .popup-login__content {
+    padding: 30px 10px;
+  }
+}
+
 .popup-login__close {
   display: block;
   position: absolute;
@@ -1827,8 +1833,8 @@ body {
   background-position: center;
   width: 20px;
   height: 20px;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
 }
 
@@ -1848,7 +1854,7 @@ body {
   height: 50px;
   border: 1px solid #061e37;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .popup-login__login {
